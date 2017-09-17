@@ -81,7 +81,7 @@ func tableResponder(w http.ResponseWriter, action TableAction) {
 		Attachments:  attachments,
 	})
 	if err != nil {
-		log.Println("Unalbe to marhsal JSON response")
+		log.Println(err)
 		http.Error(w, "Unable to marshal JSON response", http.StatusInternalServerError)
 	}
 

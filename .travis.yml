@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - 1.x
+  - master
+
+install:
+  - go get github.com/mattn/goveralls
+  - go get github.com/gorilla/schema
+
+script:
+  - $HOME/gopath/bin/goveralls -service=travis-ci

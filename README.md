@@ -7,7 +7,14 @@ Table flipping and catching because Slack only builds in one emote ¯\_(ツ)_/¯
 
 ## Setup
 
-I use [up](https://github.com/apex/up) to effortlessly host this.
+I use [up](https://github.com/apex/up) to effortlessly host this. There is minimal (optional only) configuration.
+
+### Environment Variables
+
+| ENV         | Default | Description                                                             |
+|-------------|---------|-------------------------------------------------------------------------|
+| PORT        | `8080`  | The HTTP server will listen on this port                                |
+| ATTACHMENTS | `unset` | If set to `"yes"` responses will include the emote and descriptive text |
 
 ## Usage
 

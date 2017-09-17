@@ -1,0 +1,11 @@
+{
+    "name": "slack-table-emotes",
+    "environment": {
+        "ATTACHMENTS": "no"
+    },
+    "lambda": {
+        "memory": 128,
+        "timeout": 2
+    },
+    "regions": ["us-west-2"]
+}

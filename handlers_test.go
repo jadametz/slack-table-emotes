@@ -64,7 +64,7 @@ func TestTableHandler(t *testing.T) {
 		SlackDataText: "flip",
 		Status:        http.StatusOK,
 	}, {
-		Desc:          "Table flip",
+		Desc:          "Table flip with attachments",
 		Attachments:   true,
 		Expected:      "{\"response_type\":\"in_channel\",\"text\":\"(╯°□°)╯︵ ┻━┻\",\"attachments\":[{\"text\":\"Table flipped!\"}]}",
 		SlackDataText: "flip",
@@ -76,13 +76,13 @@ func TestTableHandler(t *testing.T) {
 		SlackDataText: "catch",
 		Status:        http.StatusOK,
 	}, {
-		Desc:          "Table catch",
+		Desc:          "Table catch with attachments",
 		Attachments:   true,
 		Expected:      "{\"response_type\":\"in_channel\",\"text\":\"┬─┬ノ( º _ ºノ)\",\"attachments\":[{\"text\":\"Table caught!\"}]}",
 		SlackDataText: "catch",
 		Status:        http.StatusOK,
 	}, {
-		Desc:          "Non-valid action",
+		Desc:          "Invalid action",
 		Attachments:   false,
 		Expected:      "Did you want me to `flip` or `catch` the table?",
 		SlackDataText: "notFlipOrCatch",

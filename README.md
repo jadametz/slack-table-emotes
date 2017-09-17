@@ -1,0 +1,1 @@
+# Slack Table Emotes

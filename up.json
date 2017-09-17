@@ -5,7 +5,7 @@
     },
     "lambda": {
         "memory": 128,
-        "timeout": 2
+        "timeout": 5
     },
     "regions": ["us-west-2"]
 }

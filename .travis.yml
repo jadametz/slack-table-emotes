@@ -9,4 +9,4 @@ install:
   - go get github.com/gorilla/schema
 
 script:
-  - $HOME/gopath/bin/goveralls -service=travis-ci
+  - $HOME/gopath/bin/goveralls -service=travis-ci -v

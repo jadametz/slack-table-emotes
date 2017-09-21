@@ -60,9 +60,9 @@ func tableHandler(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Team: %s User: %s Command: %s", slackData.TeamID, slackData.UserID, slackData.Text)
 
 	switch {
-	case slackData.Text == "flip":
+	case slackData.Text == tableFlip.Action:
 		tableResponder(w, tableFlip)
-	case slackData.Text == "catch":
+	case slackData.Text == tableCatch.Action:
 		tableResponder(w, tableCatch)
 	default:
 		w.Write([]byte("Did you want me to `flip` or `catch` the table?"))
